@@ -4,7 +4,7 @@ var MyForm=React.createClass({
 			phoneNumber:"",
 			passWord:"",
 			verifyCode:"",
-			checked:true
+			checked:"true",
 		};
 	},
 	handleChange:function(name,event){
@@ -35,8 +35,8 @@ var MyForm=React.createClass({
 					<input type="button" value="获取短信验证码" className="getVerifyCode" />
 				</p>
 				<p>
-					<input type="checkbox" autocomplete="off" checked="checked" className="checkbox"
-					       value={this.state.checked} onChange={this.handleChange.bind(this,"cheched")} />
+					<input type="checkbox" autocomplete="off" className="checkbox"
+					       checked={this.state.checked} onChange={this.handleChange.bind(this,"checked")} />
 					<span className="read">阅读并接受<a href="#">《百度用户协议》</a></span>
 				</p>
 				<p>
